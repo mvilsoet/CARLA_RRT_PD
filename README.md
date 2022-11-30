@@ -1,6 +1,8 @@
 # GRAIC: A competition for intelligent racing
 
-Generalized RAcing Intelligence Competition (GRAIC). The goal of this competition is to record and help advance the state-of-the-art in (model-based and model-free)  as decision & control applied to tactical decision making for racing environments. This decision and control module will take as input (a) vehicle specs: some partial prior knowledge or a black-box executable for simulating the plant/vehicle including the input and output interfaces and (b) track specs: parameters defining the environment, such as speed of dynamic obstacles, curvatures, etc.
+Generalized RAcing Intelligence Competition (GRAIC). The goal of this competition is to record and help advance the state-of-the-art in (model-based and model-free)  as decision & control applied to tactical decision making for racing environments. 
+
+The focus of this project repository is on planning and control, since we are provided with the ground truth perception data.
 
 ## [GRAIC Documention](https://popgri.github.io/Race/installation/) to install.
 
