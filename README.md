@@ -1,9 +1,32 @@
 # GRAIC: A competition for intelligent racing
 
-## Description
+Generalized RAcing Intelligence Competition (GRAIC). The goal of this competition is to record and help advance the state-of-the-art in (model-based and model-free)  as decision & control applied to tactical decision making for racing environments. This decision and control module will take as input (a) vehicle specs: some partial prior knowledge or a black-box executable for simulating the plant/vehicle including the input and output interfaces and (b) track specs: parameters defining the environment, such as speed of dynamic obstacles, curvatures, etc.
 
-Generalized RAcing Intelligence Competition (GRAIC). The goal of this competition is to record and help advance the state-of-the-art in (model-based and model-free)  as decision & control applied to tactical decision making for racing environments. Comparing performance of different decision & control approaches is notoriously difficult. There are many computing platforms, approaches, no standard interfaces and problem specifications, and repeatability in research is complicated. We hope that this competition will jumpstart a solution to this problem.
+## [GRAIC Documention](https://popgri.github.io/Race/installation/) to install.
 
-The participants will be required to submit a piece of code (decision & control module) for generating controllers for vehicles running in partially known, complex, simulated environments. The input to the synthesized controller will come from a perception oracle that will provide a local view of obstacles and the next sequence of gates and goals in the local coordinates of the vehicle in the current environment. The output of the controller will drive the plant (e.g., a quadcopter, or a fixed-wing aircraft). The decision & control module will take as input (a) vehicle specs: some prior knowledge or a black-box executable for simulating the plant/vehicle including the input and output interfaces and (b) track specs: parameters defining the environment, such as speed of dynamic obstacles, curvatures, etc.  With this information, the decision & control module will generate the inputs which when combined with the plant and the environment will give a closed system that can be simulated. The performance evaluation will be based on simulations in a set of test environments. 
+Set environment variables and launch CARLA simulator:
 
-## Please see the [documention](https://popgri.github.io/Race/installation/) to get started.
+`export PYTHONPATH=$PYTHONPATH:{user_filespace}/catkin_ws/CARLA_0.9.13/PythonAPI/carla/`
+
+`export PYTHONPATH=$PYTHONPATH:{user_filespace}/catkin_ws/CARLA_0.9.13/PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg`
+
+`cd {user_filespace}/catkin_ws/CARLA_0.9.13/`
+
+`./CarlaUE4.sh`
+
+# Running our Decision & Control Algorithm (Linux):
+
+`cd  {user_filespace}/catkin_ws/CARLA_0.9.13/PythonAPI/util`
+
+`python3 config.py -m /Game/map_package/Maps/shanghai_intl_circuit/shanghai_intl_circuit`
+
+Run (python3) `automatic_control_GRAIC.py`
+
+
+![Algorithm Diagram](https://drive.google.com/uc?export=view&id=1HkvLVc6cazbod4Udwyk30iPVfVqXC_8U)
+
+References: 
+
+- [Guided Hybrid A-star Path Planning Algorithm for Valet Parking Applications](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8813752&tag=1)
+
+- ECE484 Principles of Safe Autonomy @ UIUC
