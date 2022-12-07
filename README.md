@@ -6,6 +6,8 @@ The focus of this project repository is on planning and control, since we are pr
 
 ## [GRAIC Documention](https://popgri.github.io/Race/installation/) to install.
 
+The TA's should only need our agent.py to run the code, then run it like usual
+
 Set environment variables and launch CARLA simulator:
 
 `export PYTHONPATH=$PYTHONPATH:{user_filespace}/catkin_ws/CARLA_0.9.13/PythonAPI/carla/`
