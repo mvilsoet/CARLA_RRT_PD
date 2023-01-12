@@ -1,4 +1,4 @@
-# GRAIC: A competition for intelligent racing
+# [GRAIC: A competition for intelligent racing](https://popgri.github.io/Race/)
 
 Generalized RAcing Intelligence Competition (GRAIC). The goal of this competition is to record and help advance the state-of-the-art in (model-based and model-free)  as decision & control applied to tactical decision making for racing environments. 
 
