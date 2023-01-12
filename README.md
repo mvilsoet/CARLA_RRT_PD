@@ -26,8 +26,13 @@ Set environment variables and launch CARLA simulator:
 
 Run (python3) `automatic_control_GRAIC.py`
 
+![Screenshot_1](https://user-images.githubusercontent.com/57650580/211971279-9b16b1ab-ee7c-4768-a0b6-24a341dc10e7.png)
 
-![Algorithm Diagram](https://drive.google.com/uc?export=view&id=1HkvLVc6cazbod4Udwyk30iPVfVqXC_8U)
+Video: The car ignores obstacles that are too far and doesn't need to swerve. Near the middle of the video, a pedestrian runs into the road which confuses the car a little which causes it to wobble. However, as the car gets closer to the pedestrian, the waypoint that represents the obstacle/pedestrian has a larger effect on the algorithm's choice and the car successfully swerves left. 
+
+https://user-images.githubusercontent.com/57650580/211971269-0e5154a6-9352-48b6-8756-9f0e7cf04fa4.mp4
+
+
 
 References: 
 
