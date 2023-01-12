@@ -6,7 +6,7 @@ The focus of this project repository is on planning and control, since we are pr
 
 ## [GRAIC Documention](https://popgri.github.io/Race/installation/) to install.
 
-The TA's should only need our agent.py to run the code, then run it like usual
+Users should only need our agent.py to run the code, then run it like usual. The remaining code proves we didn't edit other files.
 
 Set environment variables and launch CARLA simulator:
 
